@@ -1,0 +1,51 @@
+/* Home Section */
+.home-section {
+  height: 100vh;
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home-section h3 {
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.home-section h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  background-color: red;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: darkred;
+}
+
+.btn.secondary {
+  background-color: transparent;
+  border: 2px solid red;
+}
+
+.btn.secondary:hover {
+  background-color: red;
+}

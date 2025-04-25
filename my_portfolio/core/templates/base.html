@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume</title>
+  <link rel="stylesheet" href="{% static 'base.css' %}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/fontawesome.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+ <!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">RESUME<span class="dot">.</span></div>
+  <ul class="nav-links">
+    <li><a href="#home">HOME</a></li>
+    <li><a href="#about">ABOUT</a></li>
+    <li><a href="#services">SERVICES</a></li>
+    <li><a href="#portfolio">PORTFOLIO</a></li>
+    <li><a href="#testimonial">TESTIMONIAL</a></li>
+    <li><a href="#contact">CONTACT</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+</nav>
+
+
+<script>
+
+function toggleMenu() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('show');
+}
+
+
+</script>
+
+{% block content %}
+
+{% endblock %}
+
+</body>
+</html>
