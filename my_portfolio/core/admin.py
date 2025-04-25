@@ -1,8 +1,7 @@
 from django.contrib import admin
-from .models import About, Client, Recentwork, Service
+from .models import About, Service, RecentWork, Client
 
-# Register all models
 admin.site.register(About)
-admin.site.register(Client)
-admin.site.register(Recentwork)
 admin.site.register(Service)
+admin.site.register(RecentWork)
+admin.site.register(Client)

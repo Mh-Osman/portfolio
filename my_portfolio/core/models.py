@@ -7,32 +7,29 @@ class About(models.Model):
     image = models.ImageField(upload_to="about")
 
     def __str__(self):
-        return "About me"
+        return "About Me"
 
-#service model
-
+# Service Model
 class Service(models.Model):
-    name = models.CharField(max_length=100 , verbose_name="Service Name")
+    name = models.CharField(max_length=100, verbose_name="Service Name")
     description = models.TextField(verbose_name="Service Description")
-    
+
     def __str__(self):
         return self.name
 
-#recent work model
-
-class Recentwork(models.Model):
-    tiltle = models.CharField(max_length=100 , verbose_name="Project Title")
+# Recent Work Model
+class RecentWork(models.Model):
+    title = models.CharField(max_length=100, verbose_name="Project Title")
     image = models.ImageField(upload_to="recentwork")
 
     def __str__(self):
-        return self.tiltle
-    
-#client model
+        return self.title
 
+# Client Model
 class Client(models.Model):
-    name = models.CharField(max_length=100 , verbose_name="Client Name")
+    name = models.CharField(max_length=100, verbose_name="Client Name")
     description = models.TextField(verbose_name="Client Description")
-    image = models.ImageField(upload_to="client" , default="default.png")
+    image = models.ImageField(upload_to="client", default="default.png")
 
     def __str__(self):
         return self.name
