@@ -1,9 +1,12 @@
 from django.shortcuts import render
-
-# Create your views here.
 from .models import About
 
-def home(request):
-    about = About.objects.first()
-  
-    return render(request, 'home.html', {'about': about})
+
+def about(request ):
+    about = About.objects.all()
+    context = {
+        'about': about,
+    }
+    # Render the 'about.html' template with the context data    
+
+    return render(request, 'home.html' , context)

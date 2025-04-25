@@ -1,0 +1,40 @@
+
+/* CTA / Testimonial Section */
+.cta-section {
+    background: #333;
+    padding: 100px 60px;
+    text-align: center;
+    color: white;
+  }
+  
+  .cta-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .cta-container h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .cta-container p {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .cta-container .btn {
+    background-color: red;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+  }
+  
+  .cta-container .btn:hover {
+    background-color: darkred;
+  }

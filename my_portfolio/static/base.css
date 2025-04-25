@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #000;
+  color: white;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.logo .dot {
+  color: red;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.nav-links li a:hover {
+  color: red;
+}
+
+
+
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 20px 30px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 80px;  /* Adjust to the height of your navbar */
+    left: 0;
+    right: 0;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    display: none;  /* Hide by default */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .nav-links.show {
+    display: flex;
+    opacity: 1;
+  }
+
+  .nav-links li a {
+    font-size: 16px;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 28px;
+    color: white;
+  }
+
+  .nav-links li a {
+    padding: 10px 0;
+  }
+}
+
+/* Smaller devices (Portrait Phones, 480px and below) */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav-links li a {
+    font-size: 14px;
+  }
+}
